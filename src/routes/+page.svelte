@@ -1,7 +1,7 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>
+<img
+	class="w-full"
+	alt="AV4A1244"
+	src="https://www.alidaugherty.com/wp-content/uploads/2020/05/AV4A1244-scaled-e1593759119365.jpg"
+	srcset="https://www.alidaugherty.com/wp-content/uploads/2020/05/AV4A1244-scaled-e1593759119365.jpg 1200w, https://www.alidaugherty.com/wp-content/uploads/2020/05/AV4A1244-scaled-e1593759119365.jpg 2048w, https://www.alidaugherty.com/wp-content/uploads/2020/05/AV4A1244-scaled-e1593759119365.jpg 2560w"
+	style="opacity: 1; filter: blur(0px);"
+/>
