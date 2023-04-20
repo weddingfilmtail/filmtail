@@ -6,7 +6,7 @@
 
 <header
 	class="flex w-full items-center justify-between py-10 sm:px-36 {$page.url.pathname === '/'
-		? 'fixed left-0 top-0 z-10 w-full bg-opacity-0 text-white'
+		? 'fixed left-0 top-0 z-10 bg-opacity-0 text-white'
 		: ''}"
 >
 	<Logo />
