@@ -4,10 +4,14 @@
 	import Logo from './Logo.svelte';
 </script>
 
-<header class="flex items-center justify-between px-36 py-10">
+<header
+	class="flex w-full items-center justify-between py-10 sm:px-36 {$page.url.pathname === '/'
+		? 'fixed left-0 top-0 z-10 w-full bg-opacity-0 text-white'
+		: ''}"
+>
 	<Logo />
 	<nav>
-		<ul class="flex gap-16 text-lg font-semibold">
+		<ul class="flex gap-16 text-lg tracking-widest">
 			<li>
 				<a href="/" class:active={$page.url.pathname === '/'}> HOME </a>
 			</li>
