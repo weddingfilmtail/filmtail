@@ -24,7 +24,7 @@
 	startInterval();
 </script>
 
-<div class="relative">
+<div class="relative bg-gray-300">
 	{#key url}
 		<img
 			class="h-screen w-full object-cover"
