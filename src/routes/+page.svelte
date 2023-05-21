@@ -2,7 +2,9 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { fade } from 'svelte/transition';
 
-	const images = ['wedding1.png', 'wedding2.png', 'wedding3.png', 'wedding4.png'];
+	export let data;
+
+	const images = data.images.map((image) => image.publicUrl);
 
 	let index = 0;
 	let image = images[index];
@@ -28,7 +30,7 @@
 		<img
 			class="h-screen w-full object-cover"
 			alt="wedding"
-			src={`src/lib/assets/${image}`}
+			src={image}
 			in:fade={{ duration: 1500 }}
 		/>
 	{/key}
