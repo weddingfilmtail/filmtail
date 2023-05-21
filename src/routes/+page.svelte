@@ -1,6 +1,6 @@
 <script>
 	import Icon from '$lib/components/Icon.svelte';
-	import { fade, fly } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	const images = ['wedding1.png', 'wedding2.png', 'wedding3.png', 'wedding4.png'];
 
@@ -30,7 +30,6 @@
 			alt="wedding"
 			src="/images/{image}"
 			in:fade={{ duration: 1500 }}
-			out:fade={{ duration: 500 }}
 		/>
 	{/key}
 	<div class="absolute bottom-16 flex w-full items-center justify-center gap-20">
