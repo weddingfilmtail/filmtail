@@ -4,9 +4,12 @@
 </script>
 
 <nav class="hidden lg:block">
-	<ul class="flex items-center gap-16 tracking-widest xl:text-lg">
+	<ul class="flex items-center gap-16 pt-6 text-sm tracking-widest">
 		<li>
 			<a href="/" class:active={$page.url.pathname === '/'}> HOME </a>
+		</li>
+		<li>
+			<a href="/about" class:active={$page.url.pathname === 'about'}> ABOUT US </a>
 		</li>
 		<li>
 			<a href="/portfolio" class:active={$page.url.pathname === 'portfolio'}> PORTFOLIO </a>
