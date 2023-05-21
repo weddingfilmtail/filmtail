@@ -13,11 +13,11 @@
 </script>
 
 <header
-	class="flex w-full items-center justify-between p-4 xl:px-36 xl:py-10 {$page.url.pathname === '/'
-		? 'fixed left-0 top-0 z-10 bg-opacity-0 text-white'
+	class="flex w-full items-center justify-between xl:px-36 xl:py-4 {$page.url.pathname === '/'
+		? 'absolute left-0 top-0 z-10 bg-opacity-0 text-white'
 		: ''}"
 >
-	<Logo />
+	<Logo filename={$page.url.pathname === '/' ? 'logo-white.png' : 'logo-black.png'} />
 	<Navbar />
 	<Hamberger on:toggle={handleToggle} />
 </header>
