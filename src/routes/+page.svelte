@@ -33,7 +33,7 @@
 			out:fade={{ duration: 500 }}
 		/>
 	{/key}
-	<div class="absolute bottom-16 flex w-full items-center justify-center gap-20 text-white">
+	<div class="absolute bottom-16 flex w-full items-center justify-center gap-20">
 		<button
 			on:click={() => {
 				if (index === 0) {
@@ -49,7 +49,7 @@
 		>
 			<Icon name="arrow-left" />
 		</button>
-		<span class="flex items-center gap-1">
+		<span class="flex items-center gap-1 text-white">
 			<span class="text-xs">{index + 1}</span>
 			<span class="text-3xl font-thin">/</span>
 			<span class="text-xs">{images.length}</span>
