@@ -5,7 +5,7 @@
 
 <a href="/" class="relative">
 	{#if $page.url.pathname === '/'}
-		<div class="absolute left-10 top-11 -z-10 w-44 bg-black bg-opacity-40 py-2 blur-lg" />
+		<div class="absolute left-10 top-11 -z-10 w-44 bg-black bg-opacity-30 py-2 blur-lg" />
 	{/if}
 	<img src={`/${filename}`} alt="logo" class="z-50 w-64" />
 </a>
