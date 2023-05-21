@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"feather-icons": "^4.29.0",
 		"prettier-plugin-tailwindcss": "^0.2.7"
 	}
 }
