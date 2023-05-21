@@ -17,7 +17,7 @@
 		? 'absolute left-0 top-0 z-10 bg-opacity-0 text-white'
 		: ''}"
 >
-	<Logo filename={$page.url.pathname === '/' ? 'logo-white.png' : 'logo-black.png'} />
+	<Logo />
 	<Navbar />
 	<Hamberger on:toggle={handleToggle} />
 </header>
