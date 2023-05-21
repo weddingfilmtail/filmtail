@@ -28,7 +28,7 @@
 		<img
 			class="h-screen w-full object-cover"
 			alt="wedding"
-			src="/images/{image}"
+			src={`src/lib/assets/${image}`}
 			in:fade={{ duration: 1500 }}
 		/>
 	{/key}
