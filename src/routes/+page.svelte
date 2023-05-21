@@ -4,10 +4,9 @@
 
 	export let data;
 
-	const images = data.images.map((image) => image.publicUrl);
-
+	const images = data.images;
 	let index = 0;
-	let image = images[index];
+	let url = images[index].publicUrl;
 	let intervalId = 0;
 
 	const startInterval = () => {
@@ -18,7 +17,7 @@
 				index++;
 			}
 
-			image = images[index];
+			url = images[index].publicUrl;
 		}, 5000);
 	};
 
@@ -26,11 +25,11 @@
 </script>
 
 <div class="relative">
-	{#key image}
+	{#key url}
 		<img
 			class="h-screen w-full object-cover"
 			alt="wedding"
-			src={image}
+			src={url}
 			in:fade={{ duration: 1500 }}
 		/>
 	{/key}
@@ -43,7 +42,7 @@
 					index--;
 				}
 
-				image = images[index];
+				url = images[index].publicUrl;
 				clearInterval(intervalId);
 				startInterval();
 			}}
@@ -63,7 +62,7 @@
 					index++;
 				}
 
-				image = images[index];
+				url = images[index].publicUrl;
 				clearInterval(intervalId);
 				startInterval();
 			}}
