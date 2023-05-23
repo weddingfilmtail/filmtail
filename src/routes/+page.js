@@ -1,6 +1,6 @@
 import { supabase } from '$lib/supabase.js';
 
-const images = ['wedding1.png', 'wedding2.png', 'wedding3.png', 'wedding4.png'];
+const images = ['wedding01.jpeg', 'wedding02.jpeg', 'wedding03.jpeg', 'wedding04.jpeg'];
 
 /** @type {import('./$types').PageLoad} */
 export const load = async () => {
