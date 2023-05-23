@@ -24,6 +24,12 @@
 	startInterval();
 </script>
 
+<svelte:head>
+	{#each data.images as image}
+		<link rel="preload" as="image" href={image.publicUrl} />
+	{/each}
+</svelte:head>
+
 <div class="relative bg-gray-300">
 	{#key url}
 		<img
