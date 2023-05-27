@@ -2,8 +2,10 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div class="h-screen items-center justify-center px-12 py-20 text-3xl xl:mx-36">
-	<div class="leading-loose">
+<div
+	class="mb-48 flex items-center justify-center px-8 py-20 md:block md:px-12 md:py-36 lg:mb-0 xl:mx-36"
+>
+	<div class="text-lg leading-loose sm:text-3xl sm:leading-loose">
 		<div in:fade={{ duration: 1000 }}>
 			<p>
 				<strong>'tail'</strong> 은 한 장면이나 작품의 마지막 부분을 의미합니다

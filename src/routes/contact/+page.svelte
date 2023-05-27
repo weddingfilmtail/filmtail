@@ -2,7 +2,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 </script>
 
-<div class="flex items-center justify-center p-44 sm:p-60 xl:mx-36">
+<div class="flex items-center justify-center p-44 sm:p-60 md:mb-48 lg:mb-0 xl:mx-36">
 	<div
 		class="flex flex-col rounded-2xl bg-neutral-800 p-4 px-4 text-white shadow-xl shadow-stone-500 sm:px-20"
 	>
