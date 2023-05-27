@@ -24,7 +24,7 @@
 
 {#if isMobileMenuOpen}
 	<div
-		class="fixed left-0 top-0 z-20 h-full w-full bg-orange-200"
+		class="fixed left-0 top-0 z-20 h-full w-full"
 		class:translate-x-0={isMobileMenuOpen}
 		transition:fade
 	>
