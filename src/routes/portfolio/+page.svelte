@@ -15,8 +15,8 @@
 	}
 </script>
 
-<div class="h-fit px-32 pb-10 pt-32 xl:mx-14 2xl:mx-36">
-	<div class="grid grid-cols-1 gap-x-32 gap-y-24 xl:grid-cols-2">
+<div class="p-8 md:px-32 md:py-16 xl:mx-14 2xl:mx-36">
+	<div class="grid grid-cols-1 gap-x-32 gap-y-12 md:gap-y-24 xl:grid-cols-2">
 		{#each portfolios as portfolio, i}
 			<button
 				class="flex items-center justify-center rounded border"
