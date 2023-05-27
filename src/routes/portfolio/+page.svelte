@@ -17,13 +17,14 @@
 
 <div class="h-fit px-32 pb-10 pt-32 xl:mx-14 2xl:mx-36">
 	<div class="grid grid-cols-1 gap-x-32 gap-y-24 xl:grid-cols-2">
-		{#each portfolios as portfolio}
+		{#each portfolios as portfolio, i}
 			<button
 				class="flex items-center justify-center rounded border"
 				on:click={() => {
 					selectedPortfolio = portfolio;
 					showPortfolio = true;
 				}}
+				in:fade={{ duration: 300, delay: 200 * i }}
 			>
 				<img
 					src={portfolio.image_key}
