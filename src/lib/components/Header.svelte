@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	import { fade } from 'svelte/transition';
 	import Hamberger from './Hamberger.svelte';
+	import Icon from './Icon.svelte';
 	import Logo from './Logo.svelte';
 	import Navbar from './Navbar.svelte';
 
@@ -29,10 +29,50 @@
 	<div
 		class="fixed left-0 top-0 z-20 h-full w-full bg-stone-100"
 		class:translate-x-0={isMobileMenuOpen}
-		transition:fade
 	>
-		<div class="flex flex-col justify-center pt-4">
-			<button class="font-semibold" on:click={handleToggle}>Close</button>
+		<div class="absolute left-0 top-0 flex w-full justify-end px-4 py-6">
+			<button class="font-semibold" on:click={handleToggle}>
+				<Icon name="x" />
+			</button>
+		</div>
+		<div class="flex h-full flex-col items-center justify-center">
+			<ul class="flex flex-col items-center gap-12 text-sm font-bold tracking-widest">
+				<li>
+					<a href="/" class:active={$page.url.pathname === '/'} on:click={handleToggle}> HOME </a>
+				</li>
+				<li>
+					<a href="/about" class:active={$page.url.pathname === 'about'} on:click={handleToggle}>
+						ABOUT US
+					</a>
+				</li>
+				<li>
+					<a
+						href="/portfolio"
+						class:active={$page.url.pathname === 'portfolio'}
+						on:click={handleToggle}
+					>
+						PORTFOLIO
+					</a>
+				</li>
+				<li>
+					<a
+						href="/product"
+						class:active={$page.url.pathname === 'product'}
+						on:click={handleToggle}
+					>
+						PRODUCT
+					</a>
+				</li>
+				<li>
+					<a
+						href="/contact"
+						class:active={$page.url.pathname === 'contact'}
+						on:click={handleToggle}
+					>
+						CONTACT
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 {/if}
