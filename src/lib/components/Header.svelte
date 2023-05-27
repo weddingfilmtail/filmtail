@@ -9,7 +9,10 @@
 
 	function handleToggle() {
 		isMobileMenuOpen = !isMobileMenuOpen;
+		document.body.style.overflow = 'auto';
 	}
+
+	$: isMobileMenuOpen && (document.body.style.overflow = 'hidden');
 </script>
 
 <header
@@ -24,7 +27,7 @@
 
 {#if isMobileMenuOpen}
 	<div
-		class="fixed left-0 top-0 z-20 h-full w-full"
+		class="fixed left-0 top-0 z-20 h-full w-full bg-stone-100"
 		class:translate-x-0={isMobileMenuOpen}
 		transition:fade
 	>
