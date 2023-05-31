@@ -22,8 +22,8 @@
 			</div>
 		</div>
 		<div class="m-4 flex items-center justify-center rounded-lg bg-gray-100 font-sans md:text-lg">
-			<ul class="p-4">
-				<li>할인 프로모션</li>
+			<ul class="p-6">
+				<li>오픈 할인 프로모션</li>
 				<li>시네마틱 웨딩필름 (3~5')</li>
 				<li>SNS용 1분 하이라이트 영상 (1')</li>
 				<li>현장감 있는 다큐멘터리 영상 (NG컷 제외 3~40')</li>
@@ -45,5 +45,13 @@
 		border-left: 60px solid transparent;
 		border-right: 60px solid rgb(253 224 71);
 		border-top-right-radius: 10px;
+	}
+
+	li::marker {
+		content: '👉';
+	}
+
+	li {
+		padding-left: 0.5rem;
 	}
 </style>
