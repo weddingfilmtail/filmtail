@@ -18,6 +18,22 @@
 	font-weight: 500;
 }
 
+@font-face {
+	font-family: 'Default Font';
+	src: url('$lib/fonts/nanum-myeongjo-korean-normal.ttf');
+	unicode-range: U+AC00-D7AF;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Default Font';
+	src: url('$lib/fonts/nanum-myeongjo-korean-bold.ttf');
+	unicode-range: U+AC00-D7AF;
+	font-style: normal;
+	font-weight: 700;
+}
+
 html {
 	font-family: 'Default Font', serif;
 }

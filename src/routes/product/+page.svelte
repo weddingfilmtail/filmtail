@@ -9,19 +9,17 @@
 	>
 		<div class="absolute right-0 top-0">
 			<div class="triangle">
-				<span class="absolute -right-1 bottom-14 rotate-45 font-sans text-base font-semibold">
-					PROMOTION
-				</span>
+				<span class="absolute -right-1 bottom-14 rotate-45"> PROMOTION </span>
 			</div>
 		</div>
 		<div class="flex flex-col gap-4 pb-6 pt-12 text-center text-white">
-			<h3 class="text-2xl font-bold tracking-wider md:text-3xl">STANDARD</h3>
+			<h3 class="text-2xl font-medium tracking-wider md:text-3xl">STANDARD</h3>
 			<div class="flex flex-col">
-				<p class="text-2xl font-bold md:text-3xl">600,000</p>
+				<p class="text-2xl font-medium md:text-3xl">600,000</p>
 				<p class="text-base line-through md:text-lg">800,000</p>
 			</div>
 		</div>
-		<div class="m-4 flex items-center justify-center rounded-lg bg-gray-100 font-sans md:text-lg">
+		<div class="m-4 flex items-center justify-center rounded-lg bg-gray-100 md:text-lg">
 			<ul class="p-6">
 				<li>오픈 할인 프로모션</li>
 				<li>시네마틱 웨딩필름 (3~5')</li>
