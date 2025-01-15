@@ -36,17 +36,27 @@
 		<div class="flex h-full flex-col items-center justify-center">
 			<ul class="flex flex-col items-center gap-12 tracking-widest">
 				<li>
-					<a href="/" class:active={$page.url.pathname === '/'} on:click={handleToggle}> HOME </a>
+					<a
+						href="/"
+						class={$page.url.pathname === '/' ? 'font-medium' : ''}
+						on:click={handleToggle}
+					>
+						HOME
+					</a>
 				</li>
 				<!-- <li>
-					<a href="/about" class:active={$page.url.pathname === 'about'} on:click={handleToggle}>
+					<a
+						href="/about"
+						class={$page.url.pathname.startsWith('/about') ? 'font-medium' : ''}
+						on:click={handleToggle}
+					>
 						ABOUT US
 					</a>
 				</li> -->
 				<li>
 					<a
 						href="/portfolio"
-						class:active={$page.url.pathname.startsWith('/portfolio')}
+						class={$page.url.pathname.startsWith('/portfolio') ? 'font-medium' : ''}
 						on:click={handleToggle}
 					>
 						PORTFOLIO
@@ -55,7 +65,7 @@
 				<li>
 					<a
 						href="/product"
-						class:active={$page.url.pathname.startsWith('/product')}
+						class={$page.url.pathname.startsWith('/product') ? 'font-medium' : ''}
 						on:click={handleToggle}
 					>
 						PRODUCT
@@ -64,7 +74,7 @@
 				<li>
 					<a
 						href="/contact"
-						class:active={$page.url.pathname.startsWith('/contact')}
+						class={$page.url.pathname.startsWith('/contact') ? 'font-medium' : ''}
 						on:click={handleToggle}
 					>
 						CONTACT
@@ -74,9 +84,3 @@
 		</div>
 	</div>
 {/if}
-
-<style lang="postcss">
-	ul li a.active {
-		font-family: 'futura condensed medium', serif;
-	}
-</style>

@@ -3,17 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'futura condensed light';
+	font-family: 'Default Font';
 	src: url('$lib/fonts/futura-condensed-light.ttf');
+	unicode-range: U+0030-0039, U+0041-005A, U+0061-007A; /* 영어 대문자와 소문자 */
+	font-style: normal;
+	font-weight: 400;
 }
 
 @font-face {
-	font-family: 'futura condensed medium';
+	font-family: 'Default Font';
 	src: url('$lib/fonts/futura-condensed-medium.ttf');
+	unicode-range: U+0030-0039, U+0041-005A, U+0061-007A; /* 영어 대문자와 소문자 */
+	font-style: normal;
+	font-weight: 500;
 }
 
 html {
-	font-family: 'futura condensed light', serif;
+	font-family: 'Default Font', serif;
 }
 
 @layer components {
