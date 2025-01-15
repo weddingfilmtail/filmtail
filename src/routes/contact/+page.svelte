@@ -25,11 +25,11 @@
 					<li class="flex items-center gap-4">
 						<Icon name="instagram" />
 						<a
-							href="https://instagram.com/filmtail.wedding?igshid=MzRlODBiNWFlZA=="
+							href="https://instagram.com/filmtailwedding?igshid=MzRlODBiNWFlZA=="
 							target="_blank"
 							class="font-bold"
 						>
-							@filmtail.wedding
+							@filmtailwedding
 						</a>
 					</li>
 				</ul>
