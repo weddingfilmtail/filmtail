@@ -19,18 +19,14 @@
 	<div class="grid grid-cols-1 gap-x-32 gap-y-12 md:gap-y-24 xl:grid-cols-2">
 		{#each portfolios as portfolio, i}
 			<button
-				class="flex items-center justify-center rounded border"
+				class="flex items-center justify-center rounded border shadow-2xl"
 				on:click={() => {
 					selectedPortfolio = portfolio;
 					showPortfolio = true;
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<img
-					src={portfolio.image_key}
-					alt="portfolio"
-					class="rounded border-2 border-gray-700 shadow-2xl"
-				/>
+				<img src={portfolio.image_key} alt="portfolio" class="w-full rounded" />
 			</button>
 		{/each}
 	</div>
