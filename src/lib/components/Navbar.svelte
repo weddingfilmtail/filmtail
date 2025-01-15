@@ -4,7 +4,7 @@
 </script>
 
 <nav class="hidden lg:block">
-	<ul class="mr-4 flex items-center gap-16 text-sm tracking-widest">
+	<ul class="mr-4 flex items-center gap-16 tracking-widest">
 		<li>
 			<a href="/" class:active={$page.url.pathname === '/'}> HOME </a>
 		</li>
@@ -12,13 +12,15 @@
 			<a href="/about" class:active={$page.url.pathname === 'about'}> ABOUT US </a>
 		</li> -->
 		<li>
-			<a href="/portfolio" class:active={$page.url.pathname === '/portfolio'}> PORTFOLIO </a>
+			<a href="/portfolio" class:active={$page.url.pathname.startsWith('/portfolio')}>
+				PORTFOLIO
+			</a>
 		</li>
 		<li>
-			<a href="/product" class:active={$page.url.pathname === '/product'}> PRODUCT </a>
+			<a href="/product" class:active={$page.url.pathname.startsWith('/product')}> PRODUCT </a>
 		</li>
 		<li>
-			<a href="/contact" class:active={$page.url.pathname === '/contact'}> CONTACT </a>
+			<a href="/contact" class:active={$page.url.pathname.startsWith('/contact')}> CONTACT </a>
 		</li>
 	</ul>
 </nav>
