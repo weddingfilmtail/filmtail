@@ -16,9 +16,7 @@
 </script>
 
 <header
-	class="flex w-full items-center justify-between xl:px-36 xl:py-4 {$page.url.pathname === '/'
-		? 'absolute left-0 top-0 z-10 bg-opacity-0 text-white'
-		: ''}"
+	class="fixed left-0 top-0 z-10 flex h-14 w-full items-center justify-between bg-white sm:h-16 xl:px-80 xl:py-4"
 >
 	<Logo />
 	<Navbar />

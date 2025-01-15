@@ -4,7 +4,7 @@
 </script>
 
 <nav class="hidden lg:block">
-	<ul class="mr-4 flex items-center gap-16 pt-6 text-sm font-bold tracking-widest">
+	<ul class="mr-4 flex items-center gap-16 text-xs font-bold tracking-widest">
 		<li>
 			<a href="/" class:active={$page.url.pathname === '/'}> HOME </a>
 		</li>
