@@ -8,9 +8,9 @@
 		<li>
 			<a href="/" class:active={$page.url.pathname === '/'}> HOME </a>
 		</li>
-		<li>
+		<!-- <li>
 			<a href="/about" class:active={$page.url.pathname === 'about'}> ABOUT US </a>
-		</li>
+		</li> -->
 		<li>
 			<a href="/portfolio" class:active={$page.url.pathname === 'portfolio'}> PORTFOLIO </a>
 		</li>

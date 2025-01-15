@@ -40,11 +40,11 @@
 				<li>
 					<a href="/" class:active={$page.url.pathname === '/'} on:click={handleToggle}> HOME </a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="/about" class:active={$page.url.pathname === 'about'} on:click={handleToggle}>
 						ABOUT US
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a
 						href="/portfolio"
