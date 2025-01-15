@@ -1,39 +1,28 @@
 <script>
 	import Icon from '$lib/components/Icon.svelte';
-	import { blur } from 'svelte/transition';
+	import kakaoLogo from '$lib/assets/kakao-logo.png';
 </script>
 
-<div class="flex items-center justify-center p-44 sm:p-60 md:mb-48 lg:mb-0 xl:mx-36">
-	<div class="rounded-2xl bg-stone-200 pr-1 pt-1">
-		<div
-			class="z-10 flex flex-col rounded-2xl bg-neutral-800 p-4 px-4 text-white shadow-2xl sm:px-20"
-			in:blur={{ duration: 700 }}
+<div
+	class="flex flex-col items-center justify-center gap-4 py-32 sm:p-60 md:mb-48 lg:mb-0 xl:mx-36"
+>
+	<div class="flex flex-col text-center">
+		<p class="text-sm lg:text-base">아름다운 기억을 영상 속에 오롯이</p>
+		<p class="mt-24 text-sm lg:text-base">__</p>
+		<p class="mt-8 text-xs lg:text-sm">더 많은 포트폴리오는 인스타그램으로</p>
+		<p class="mt-4 text-xs lg:text-sm">예약문의는 카카오톡 채널로 부탁드립니다</p>
+		<p class="mt-4 text-xs lg:text-sm">아래의 카카오톡 버튼을 눌러주세요</p>
+	</div>
+	<div class="mt-4 flex gap-8">
+		<a href="http://pf.kakao.com/_LzsTn/chat" target="_blank" class="font-bold">
+			<img src={kakaoLogo} alt="kakao-logo" class="h-6 w-6" />
+		</a>
+		<a
+			href="https://instagram.com/filmtailwedding?igshid=MzRlODBiNWFlZA=="
+			target="_blank"
+			class="font-bold"
 		>
-			<h2 class="w-full p-4 text-center text-2xl font-bold">CONTACT US</h2>
-			<div class="p-4">
-				<ul class="flex flex-col gap-4 sm:py-6">
-					<li class="flex items-center gap-4">
-						<Icon name="phone-call" />
-						<a href="tel:010-7310-3580" class="font-bold">010-7310-3580</a>
-					</li>
-					<li class="flex items-center gap-4">
-						<Icon name="mail" />
-						<a href="mailto:weddingfilmtail@gmail.com" target="_blank" class="font-bold">
-							weddingfilmtail@gmail.com
-						</a>
-					</li>
-					<li class="flex items-center gap-4">
-						<Icon name="instagram" />
-						<a
-							href="https://instagram.com/filmtailwedding?igshid=MzRlODBiNWFlZA=="
-							target="_blank"
-							class="font-bold"
-						>
-							@filmtailwedding
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+			<Icon name="instagram" />
+		</a>
 	</div>
 </div>
