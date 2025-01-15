@@ -10,12 +10,14 @@
 
 <button
 	on:click={handleClick}
-	class="focus:shadow-outline mr-4 mt-2 block focus:outline-none lg:hidden"
+	class="focus:shadow-outline mr-4 block focus:outline-none lg:hidden"
 	type="button"
 >
-	<svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-		<path
-			d="M4 5h16c1.1 0 2-.9 2-2s-.9-2-2-2H4C2.9 1 2 1.9 2 3s.9 2 2 2zm0 6h16c1.1 0 2-.9 2-2s-.9-2-2-2H4c-1.1 0-2 .9-2 2s.9 2 2 2zm0 6h16c1.1 0 2-.9 2-2s-.9-2-2-2H4c-1.1 0-2 .9-2 2s.9 2 2 2z"
-		/>
+	<svg class="h-6 w-6 text-black/80" viewBox="0 0 12 12">
+		<g>
+			<rect fill="currentColor" height="1" width="11" x="0.5" y="5.5" />
+			<rect fill="currentColor" height="1" width="11" x="0.5" y="2.5" />
+			<rect fill="currentColor" height="1" width="11" x="0.5" y="8.5" />
+		</g>
 	</svg>
 </button>
