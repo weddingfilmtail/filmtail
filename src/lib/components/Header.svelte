@@ -29,12 +29,12 @@
 		class:translate-x-0={isMobileMenuOpen}
 	>
 		<div class="absolute left-0 top-0 flex w-full justify-end px-4 py-6">
-			<button class="font-semibold" on:click={handleToggle}>
+			<button on:click={handleToggle}>
 				<Icon name="x" />
 			</button>
 		</div>
 		<div class="flex h-full flex-col items-center justify-center">
-			<ul class="flex flex-col items-center gap-12 text-sm font-bold tracking-widest">
+			<ul class="flex flex-col items-center gap-12 tracking-widest">
 				<li>
 					<a href="/" class:active={$page.url.pathname === '/'} on:click={handleToggle}> HOME </a>
 				</li>
@@ -46,7 +46,7 @@
 				<li>
 					<a
 						href="/portfolio"
-						class:active={$page.url.pathname === 'portfolio'}
+						class:active={$page.url.pathname.startsWith('/portfolio')}
 						on:click={handleToggle}
 					>
 						PORTFOLIO
@@ -55,7 +55,7 @@
 				<li>
 					<a
 						href="/product"
-						class:active={$page.url.pathname === 'product'}
+						class:active={$page.url.pathname.startsWith('/product')}
 						on:click={handleToggle}
 					>
 						PRODUCT
@@ -64,7 +64,7 @@
 				<li>
 					<a
 						href="/contact"
-						class:active={$page.url.pathname === 'contact'}
+						class:active={$page.url.pathname.startsWith('/contact')}
 						on:click={handleToggle}
 					>
 						CONTACT
@@ -76,7 +76,7 @@
 {/if}
 
 <style lang="postcss">
-	/* nav ul li a.active {
-		color: #ff3e00;
-	} */
+	ul li a.active {
+		font-family: 'futura condensed medium', serif;
+	}
 </style>
