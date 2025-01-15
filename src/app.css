@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'futura condensed light';
+	src: url('$lib/fonts/futura-condensed-light.ttf');
+}
+
+@font-face {
+	font-family: 'futura condensed medium';
+	src: url('$lib/fonts/futura-condensed-medium.ttf');
+}
+
+html {
+	font-family: 'futura condensed light', serif;
+}
+
 @layer components {
 	.feather {
 		width: 24px;
