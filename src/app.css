@@ -34,6 +34,14 @@
 	font-weight: 700;
 }
 
+@font-face {
+	font-family: 'Default Font';
+	src: url('$lib/fonts/nanum-myeongjo-korean-extrabold.ttf');
+	unicode-range: U+AC00-D7AF;
+	font-style: normal;
+	font-weight: 800;
+}
+
 @layer components {
 	.feather {
 		width: 24px;
