@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<nav class="hidden lg:block">
+<nav class="hidden xl:block">
 	<ul class="flex items-center gap-16 tracking-widest">
 		<li>
 			<a href="/" class={$page.url.pathname === '/' ? 'font-medium' : ''}> HOME </a>
