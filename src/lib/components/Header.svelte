@@ -15,13 +15,15 @@
 	$: isMobileMenuOpen && (document.body.style.overflow = 'hidden');
 </script>
 
-<header
-	class="fixed left-0 right-0 top-0 z-50 mx-auto flex h-14 w-full max-w-6xl items-center justify-between bg-white px-4 lg:h-16 lg:px-0"
->
-	<Logo />
-	<Navbar />
-	<Hamberger on:toggle={handleToggle} />
-</header>
+<div class="fixed left-0 right-0 top-0 z-50 bg-white">
+	<header
+		class="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4 lg:h-16 lg:px-0"
+	>
+		<Logo />
+		<Navbar />
+		<Hamberger on:toggle={handleToggle} />
+	</header>
+</div>
 
 {#if isMobileMenuOpen}
 	<div

@@ -6,7 +6,7 @@
 </script>
 
 <Header />
-<main class="mx-auto h-screen w-full max-w-6xl {$page.url.pathname !== '/' ? 'pt-14' : ''}">
+<main class="h-screen w-full {$page.url.pathname !== '/' ? 'mx-auto max-w-6xl pt-14' : ''}">
 	<slot />
 </main>
 <Footer />
