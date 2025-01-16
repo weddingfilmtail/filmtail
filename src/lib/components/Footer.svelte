@@ -6,15 +6,27 @@
 </script>
 
 <footer
-	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 py-4 sm:flex-row lg:py-8"
+	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 py-4 xl:flex-row xl:py-8"
 >
-	<p class="text-center tracking-wider sm:text-left">
-		Copyrights &copy; Filmtail 2023 | All rights Reserved
-	</p>
-	<div class="flex gap-4">
-		<button class="font-medium" on:click={scrollToTop}> Back to Top </button>
-		<button class="font-medium" on:click={scrollToTop}>
-			<svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+	<address
+		class="flex flex-col items-center gap-1 font-sans text-xs not-italic text-black/60 xl:flex-row xl:gap-2 xl:text-sm"
+	>
+		<span>스윙을하는자세</span>
+		<span class="hidden xl:inline">|</span>
+		<span>경기도 수원시 영통구 동수원로537번길 28-5</span>
+		<span class="hidden xl:inline">|</span>
+		<span>대표: 이서형</span>
+		<span class="hidden xl:inline">|</span>
+		<span>사업자번호: 685-09-02743</span>
+		<span class="hidden xl:inline">|</span>
+		<span>
+			Copyright &copy; Filmtail {new Date().getFullYear()} All rights reserved.
+		</span>
+	</address>
+	<div class="flex items-center gap-1">
+		<button class="text-sm font-medium" on:click={scrollToTop}> Back to Top </button>
+		<button class="pb-0.5 font-medium" on:click={scrollToTop}>
+			<svg class="h-3 w-3 xl:h-4 xl:w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 				<g id="Complete">
 					<g id="arrow-up">
 						<g>
