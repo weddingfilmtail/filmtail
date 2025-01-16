@@ -1,15 +1,20 @@
 <!-- Footer.svelte -->
 <script>
+	import { page } from '$app/stores';
+
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
 </script>
 
 <footer
-	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 py-4 xl:flex-row xl:py-8"
+	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 py-8 xl:flex-row xl:py-16"
 >
 	<address
-		class="flex flex-col items-center gap-1 font-sans text-xs not-italic text-black/60 xl:flex-row xl:gap-2 xl:text-sm"
+		class="flex flex-col items-center gap-1 font-sans text-xs not-italic text-black/60 xl:flex-row xl:gap-2 xl:text-sm {$page
+			.url.pathname !== '/'
+			? 'hidden xl:block'
+			: ''}"
 	>
 		<span>스윙을하는자세</span>
 		<span class="hidden xl:inline">|</span>
