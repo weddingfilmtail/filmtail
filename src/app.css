@@ -34,10 +34,6 @@
 	font-weight: 700;
 }
 
-html {
-	font-family: 'Default Font', serif;
-}
-
 @layer components {
 	.feather {
 		width: 24px;
@@ -48,4 +44,11 @@ html {
 		stroke-linejoin: round;
 		fill: none;
 	}
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Default Font', serif;
 }

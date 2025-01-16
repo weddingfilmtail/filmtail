@@ -16,7 +16,7 @@
 </script>
 
 <header
-	class="fixed left-0 top-0 z-50 flex h-14 w-full items-center justify-between bg-white sm:h-16 xl:px-80 xl:py-4"
+	class="fixed left-0 right-0 top-0 z-50 mx-auto flex h-14 w-full max-w-6xl items-center justify-between bg-white px-4 lg:h-16 lg:px-0"
 >
 	<Logo />
 	<Navbar />

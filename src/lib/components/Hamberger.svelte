@@ -10,7 +10,7 @@
 
 <button
 	on:click={handleClick}
-	class="focus:shadow-outline mr-4 block focus:outline-none lg:hidden"
+	class="focus:shadow-outline block focus:outline-none lg:hidden"
 	type="button"
 >
 	<svg class="h-6 w-6 text-black/80" viewBox="0 0 12 12">

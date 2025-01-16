@@ -6,7 +6,7 @@
 </script>
 
 <footer
-	class="flex w-full flex-col items-center justify-between gap-4 px-4 py-12 sm:flex-row xl:px-36"
+	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 py-4 sm:flex-row lg:py-8"
 >
 	<p class="text-center tracking-wider sm:text-left">
 		Copyrights &copy; Filmtail 2023 | All rights Reserved

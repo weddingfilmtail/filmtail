@@ -8,5 +8,5 @@
 </script>
 
 <a href="/">
-	<img src={logoBlack} alt="logo" class="z-50 {isMobile ? 'w-40' : 'w-52'}" />
+	<img src={logoBlack} alt="logo" class="w-auto {isMobile ? 'ml-2 h-4' : 'h-6'}" />
 </a>
