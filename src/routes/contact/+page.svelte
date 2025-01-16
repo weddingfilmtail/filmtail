@@ -3,7 +3,7 @@
 	import kakaoLogo from '$lib/assets/kakao-logo.png';
 </script>
 
-<div class="flex h-full flex-col items-center justify-center gap-4 pb-32">
+<div class="flex h-screen flex-col items-center justify-center gap-4 pb-32 pt-14">
 	<div class="flex flex-col text-center">
 		<p class="text-sm lg:text-base">아름다운 기억을 영상 속에 오롯이</p>
 		<p class="mt-24 text-sm lg:text-base">__</p>
