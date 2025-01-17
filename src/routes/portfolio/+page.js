@@ -13,7 +13,7 @@ export const load = async () => {
 		}
 
 		portfolios.forEach(async (portfolio) => {
-			const { data } = supabase.storage.from('images').getPublicUrl(portfolio.image_key);
+			const { data } = supabase.storage.from('images/portfolio').getPublicUrl(portfolio.image_key);
 			portfolio.image_key = data.publicUrl;
 		});
 
