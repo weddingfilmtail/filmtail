@@ -33,7 +33,7 @@
 <div class="relative bg-gray-300">
 	{#key url}
 		<img
-			class="h-screen w-full object-cover"
+			class="h-screen w-full object-cover pt-16"
 			alt="wedding"
 			src={url}
 			in:fade={{ duration: 1500 }}
