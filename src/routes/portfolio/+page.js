@@ -2,8 +2,11 @@ import { supabase } from '$lib/supabase.js';
 
 /** @type {import('./$types').PageLoad} */
 export const load = async () => {
-	const fetchPortfolios = async () => {
-		const { data: portfolios, error } = await supabase.from('portfolio').select('*');
+	const fetchMainPortfolios = async () => {
+		const { data: portfolios, error } = await supabase
+			.from('portfolio')
+			.select('*')
+			.neq('priority', 0);
 
 		if (error) {
 			throw error;
@@ -17,7 +20,21 @@ export const load = async () => {
 		return portfolios.sort((a, b) => a.priority - b.priority);
 	};
 
+	const fetchRemainings = async () => {
+		const { data: portfolios, error } = await supabase
+			.from('portfolio')
+			.select('*')
+			.eq('priority', 0);
+
+		if (error) {
+			throw error;
+		}
+
+		return portfolios.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+	};
+
 	return {
-		portfolios: fetchPortfolios()
+		mainPortfolios: fetchMainPortfolios(),
+		remainings: fetchRemainings()
 	};
 };
