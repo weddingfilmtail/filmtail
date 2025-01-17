@@ -5,8 +5,8 @@ const images = ['wedding01.jpeg', 'wedding02.jpeg', 'wedding03.jpeg', 'wedding04
 /** @type {import('./$types').PageLoad} */
 export const load = async () => {
 	const fetchImages = async () => {
-		const promises = images.map(async (image) => {
-			const { data: publicUrl } = await supabase.storage.from('images').getPublicUrl(image);
+		const promises = images.map((image) => {
+			const { data: publicUrl } = supabase.storage.from('images').getPublicUrl(image);
 			return publicUrl;
 		});
 		const urls = await Promise.all(promises);
