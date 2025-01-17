@@ -27,7 +27,7 @@
 
 {#if isMobileMenuOpen}
 	<div
-		class="fixed left-0 top-0 z-20 h-full w-full bg-stone-100"
+		class="fixed left-0 top-0 z-50 h-full w-full bg-stone-100"
 		class:translate-x-0={isMobileMenuOpen}
 	>
 		<div class="absolute left-0 top-0 flex w-full justify-end px-4 py-6">
