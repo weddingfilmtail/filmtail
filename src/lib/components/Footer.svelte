@@ -8,7 +8,7 @@
 </script>
 
 <footer
-	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 py-8 xl:flex-row xl:py-16"
+	class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 pb-6 pt-40 xl:flex-row xl:pt-44"
 >
 	<address
 		class="flex flex-col items-center gap-1 font-sans text-xs not-italic text-black/60 xl:flex-row xl:gap-2 xl:text-sm {$page
