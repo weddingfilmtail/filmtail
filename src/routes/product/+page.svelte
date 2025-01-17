@@ -71,9 +71,9 @@
 		</section>
 	</div>
 
-	<div class="flex flex-col gap-16 xl:mt-28">
+	<div class="flex flex-col gap-10 xl:mt-28">
+		<span class="font-extrabold">선택 사항</span>
 		<div class="flex flex-col gap-2">
-			<span class="font-extrabold">선택 사항</span>
 			<span>드론 촬영 - 15만 원</span>
 			<span>촬영 인원 추가 - 1인 25만 원</span>
 			<span>10~20분 다큐멘터리 영상 - 15만 원</span>
