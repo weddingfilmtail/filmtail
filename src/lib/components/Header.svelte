@@ -15,7 +15,7 @@
 	$: isMobileMenuOpen && (document.body.style.overflow = 'hidden');
 </script>
 
-<div class="fixed left-0 right-0 top-0 z-50 bg-white">
+<div class="fixed left-0 right-0 top-0 z-40 bg-white">
 	<header
 		class="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4 xl:h-16 xl:px-0"
 	>
