@@ -1,6 +1,6 @@
 import { supabase } from '$lib/supabase.js';
 
-const images = Array.from({ length: 16 }, (_, index) => {
+const images = Array.from({ length: 10 }, (_, index) => {
 	const number = `${index + 1}`;
 	return `wedding${number.padStart(2, '0')}.jpeg`;
 });

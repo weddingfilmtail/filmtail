@@ -30,13 +30,13 @@
 	{/each}
 </svelte:head>
 
-<div class="relative bg-gray-300">
+<div class="relative bg-black">
 	{#key url}
 		<img
 			class="h-screen w-full object-cover pt-14 xl:pt-16"
 			alt="wedding"
 			src={url}
-			in:fade={{ duration: 1500 }}
+			in:fade={{ duration: 300 }}
 		/>
 	{/key}
 	<div class="absolute bottom-16 flex w-full items-center justify-center gap-20 text-white">
