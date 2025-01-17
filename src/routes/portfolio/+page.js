@@ -2,11 +2,12 @@ import { supabase } from '$lib/supabase.js';
 
 /** @type {import('./$types').PageLoad} */
 export const load = async () => {
-	const fetchMainPortfolios = async () => {
+	const fetchPortfoliosByProduct = async (product) => {
 		const { data: portfolios, error } = await supabase
 			.from('portfolio')
 			.select('*')
-			.neq('priority', 0);
+			.neq('priority', 0)
+			.eq('product', product);
 
 		if (error) {
 			throw error;
@@ -34,7 +35,8 @@ export const load = async () => {
 	};
 
 	return {
-		mainPortfolios: fetchMainPortfolios(),
+		ceremonyPortfolios: fetchPortfoliosByProduct('ceremony'),
+		freePortfolios: fetchPortfoliosByProduct('free'),
 		remainings: fetchRemainings()
 	};
 };
