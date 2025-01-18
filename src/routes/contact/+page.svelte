@@ -1,6 +1,13 @@
 <script>
 	import Icon from '$lib/components/Icon.svelte';
 	import kakaoLogo from '$lib/assets/kakao-logo.png';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		setTimeout(() => {
+			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
+		}, 10);
+	});
 </script>
 
 <div class="flex h-screen flex-col items-center justify-center gap-4 pb-32 pt-14">

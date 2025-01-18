@@ -2,11 +2,19 @@
 	import { browser } from '$app/environment';
 	import Portfolio from '$lib/components/Portfolio.svelte';
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
 	export let data;
 
 	let showPortfolio = false;
 	const { ceremonyPortfolios, freePortfolios, remainings } = data;
 	let selectedPortfolio = {};
+
+	onMount(() => {
+		setTimeout(() => {
+			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
+		}, 10);
+	});
 
 	$: if (browser) {
 		showPortfolio

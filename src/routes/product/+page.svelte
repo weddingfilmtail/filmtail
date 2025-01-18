@@ -1,3 +1,13 @@
+<script>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		setTimeout(() => {
+			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
+		}, 10);
+	});
+</script>
+
 <div
 	class="flex h-full flex-col gap-32 break-keep px-4 pt-20 text-center text-xs leading-looser xl:pt-52"
 >
