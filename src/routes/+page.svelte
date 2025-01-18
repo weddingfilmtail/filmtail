@@ -69,7 +69,7 @@
 	{/key}
 	{#if images}
 		<div
-			class="absolute bottom-24 flex w-full items-center justify-center gap-8 text-white xl:bottom-8"
+			class="absolute bottom-14 flex w-full items-center justify-center gap-8 text-white md:bottom-8"
 		>
 			<button
 				class="px-16 pt-32"
