@@ -64,7 +64,9 @@
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<img src={portfolio.image_key} alt={portfolio.title} class="h-full w-full object-cover" />
+				<div class="min-h-60 bg-gray-200">
+					<img src={portfolio.image_key} alt={portfolio.title} class="h-full w-auto object-cover" />
+				</div>
 			</button>
 		{/each}
 	</div>
