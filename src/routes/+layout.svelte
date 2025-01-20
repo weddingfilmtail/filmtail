@@ -3,6 +3,8 @@
 	import Header from '$lib/components/Header.svelte';
 	import { page } from '$app/stores';
 	import '../app.css';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { dev } from '$app/environment';
 
 	let lastTouchEnd = 0;
 
@@ -13,6 +15,8 @@
 		}
 		lastTouchEnd = now;
 	};
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
 
 <Header />
