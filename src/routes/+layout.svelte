@@ -5,6 +5,7 @@
 	import '../app.css';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { dev } from '$app/environment';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	let lastTouchEnd = 0;
 
@@ -17,6 +18,7 @@
 	};
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
+	injectSpeedInsights();
 </script>
 
 <Header />
