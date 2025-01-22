@@ -2,12 +2,24 @@
 	export let portfolio = {};
 
 	function getYoutubeEmbedUrl(url) {
+		if (!url) return '';
+
 		try {
-			const baseUrl = portfolio.url.slice(0, 23);
-			const videoId = portfolio.url.slice(24);
-			return `${baseUrl}/embed/${videoId}`.trim();
+			const patterns = [
+				/(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^&]+)/,
+				/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?]+)/
+			];
+
+			for (const pattern of patterns) {
+				const match = url.match(pattern);
+				if (match && match[1]) {
+					return `https://www.youtube.com/embed/${match[1]}`.trim();
+				}
+			}
+
+			return url;
 		} catch (error) {
-			console.error('Youtube URL 변환 중 오류', error);
+			console.error('YouTube URL 변환 중 오류:', error);
 			return url;
 		}
 	}
@@ -18,7 +30,7 @@
 <iframe
 	width="80%"
 	height="70%"
-	src={`${embeddedUrl}${portfolio.url.includes('?') ? '&' : '?'}autoplay=1&mute=1`}
+	src={`${embeddedUrl}?autoplay=1&mute=1`}
 	title={portfolio.title}
 	frameborder="0"
 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
