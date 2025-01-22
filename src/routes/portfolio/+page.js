@@ -31,6 +31,11 @@ export const load = async () => {
 			throw error;
 		}
 
+		portfolios.forEach(async (portfolio) => {
+			const { data } = supabase.storage.from('images/portfolio').getPublicUrl(portfolio.image_key);
+			portfolio.image_key = data.publicUrl;
+		});
+
 		return portfolios.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 	};
 
