@@ -24,7 +24,7 @@
 </script>
 
 <div class="pt-32 xl:pt-32">
-	<p class="text-center text-xs">웨딩 본식 영상</p>
+	<p class="text-center" style="font-size: 13px;">웨딩 본식 영상</p>
 	<div class="mt-20 grid grid-cols-1 gap-y-52 xl:gap-y-24">
 		{#each ceremonyPortfolios as portfolio, i}
 			<button
@@ -34,13 +34,15 @@
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<p class="text-center text-xs">{portfolio.title}</p>
+				{#if i === 0}
+					<p class="text-center text-xs">{new Date(portfolio.created_at).getFullYear()}</p>
+				{/if}
 				<img src={portfolio.image_key} alt={portfolio.title} class="h-full w-full object-cover" />
 			</button>
 		{/each}
 	</div>
 
-	<p class="mt-36 text-center text-xs xl:mt-32">프리 웨딩/식전 영상</p>
+	<p class="mt-36 text-center xl:mt-32" style="font-size: 13px;">프리 웨딩/식전 영상</p>
 
 	<div class="mt-20 grid grid-cols-1 gap-y-52 xl:gap-y-24">
 		{#each prePortfolios as portfolio, i}
@@ -51,7 +53,9 @@
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<p class="text-center text-xs">{portfolio.title}</p>
+				{#if i === 0}
+					<p class="text-center text-xs">{new Date(portfolio.created_at).getFullYear()}</p>
+				{/if}
 				<img
 					src={portfolio.image_key}
 					alt={portfolio.title}
