@@ -67,7 +67,7 @@
 
 	<p class="mt-44 text-center text-xs xl:mt-52">more</p>
 
-	<div class="mt-10 grid grid-cols-2 gap-3 px-3 md:gap-20 lg:grid-cols-3">
+	<div class="mt-10 grid grid-cols-2 gap-2 px-3 md:gap-20 lg:grid-cols-3">
 		{#each remainings as portfolio, i}
 			<button
 				on:click={() => {
@@ -76,8 +76,8 @@
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<div class="bg-gray-200">
-					<img src={portfolio.image_key} alt={portfolio.title} class="h-full w-auto object-cover" />
+				<div class="bg-gray-100">
+					<img src={portfolio.image_key} alt={portfolio.title} class="h-full w-full object-cover" />
 				</div>
 			</button>
 		{/each}
