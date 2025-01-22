@@ -41,7 +41,7 @@ export const load = async () => {
 
 	return {
 		ceremonyPortfolios: fetchPortfoliosByProduct('ceremony'),
-		freePortfolios: fetchPortfoliosByProduct('free'),
+		prePortfolios: fetchPortfoliosByProduct('pre'),
 		remainings: fetchRemainings()
 	};
 };

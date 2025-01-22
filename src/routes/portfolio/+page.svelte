@@ -7,7 +7,7 @@
 	export let data;
 
 	let showPortfolio = false;
-	const { ceremonyPortfolios, freePortfolios, remainings } = data;
+	const { ceremonyPortfolios, prePortfolios, remainings } = data;
 	let selectedPortfolio = {};
 
 	onMount(() => {
@@ -43,7 +43,7 @@
 	<p class="mt-36 text-center text-xs xl:mt-32">프리 웨딩/식전 영상</p>
 
 	<div class="mt-20 grid grid-cols-1 gap-y-52 xl:gap-y-24">
-		{#each freePortfolios as portfolio, i}
+		{#each prePortfolios as portfolio, i}
 			<button
 				on:click={() => {
 					selectedPortfolio = portfolio;
