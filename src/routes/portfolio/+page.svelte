@@ -34,7 +34,7 @@
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<p class="text-center text-xs">{new Date(portfolio.created_at).getFullYear()}</p>
+				<p class="text-center text-xs">{portfolio.title}</p>
 				<img src={portfolio.image_key} alt={portfolio.title} class="h-full w-full object-cover" />
 			</button>
 		{/each}
@@ -51,7 +51,7 @@
 				}}
 				in:fade={{ duration: 300, delay: 200 * i }}
 			>
-				<p class="text-center text-xs">{new Date(portfolio.created_at).getFullYear()}</p>
+				<p class="text-center text-xs">{portfolio.title}</p>
 				<img
 					src={portfolio.image_key}
 					alt={portfolio.title}
@@ -61,7 +61,7 @@
 		{/each}
 	</div>
 
-	<p class="mt-44 text-center text-xs xl:mt-52">~ 2023</p>
+	<p class="mt-44 text-center text-xs xl:mt-52">more</p>
 
 	<div class="mt-10 grid grid-cols-2 gap-3 px-3 md:gap-20 lg:grid-cols-3">
 		{#each remainings as portfolio, i}
